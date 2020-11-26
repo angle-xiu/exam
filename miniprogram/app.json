@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/taskList/taskList",
+    "pages/read/read",
+    "pages/note/note",
+    "pages/mine/mine"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarTitleText": "exam",
+    "navigationBarBackgroundColor": "#00BFFF",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#8f8f8f",
+    "selectedColor": "#247ffa",
+    "backgroundColor": "#FEFCFF",
+    "list": [{
+        "pagePath": "pages/taskList/taskList",
+        "iconPath": "/images/tabbar/material_grey.png",
+        "selectedIconPath": "/images/tabbar/material_blue.png",
+        "text": "学习任务"
+      },
+      {
+        "pagePath": "pages/read/read",
+        "iconPath": "/images/tabbar/book2.png",
+        "selectedIconPath": "/images/tabbar/book.png",
+        "text": "阅读"
+      },
+      {
+        "pagePath": "pages/note/note",
+        "iconPath": "/images/tabbar/notebook.png",
+        "selectedIconPath": "/images/tabbar/notebook_active.png",
+        "text": "笔记"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "images/tabbar/mine.png",
+        "selectedIconPath": "images/tabbar/mine_active.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

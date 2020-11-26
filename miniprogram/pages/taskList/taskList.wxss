@@ -1,0 +1,82 @@
+/* pages/tasklist/taskList.wxss */
+page {
+  background-color: #eff0f2;
+}
+
+.border-b {
+  border-bottom: 1px solid #d6d7dc;
+}
+
+.banner {
+  width: 100%;
+}
+
+.search-wrap {
+  padding: 34rpx 24rpx 34rpx 44rpx;
+}
+
+.tip-img {
+  width: 29rpx;
+  height: 39rpx;
+}
+
+.go-img {
+  width: 30rpx;
+  height: 28rpx;
+}
+
+.tip {
+  font-size: 32rpx;
+}
+
+.search-form {
+  border-radius: 8rpx;
+  background-color: #ededed;
+}
+
+.search-icon {
+  width: 56rpx;
+}
+
+.search-img {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+button.search-btn {
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+button.search-btn::after {
+  border: none;
+}
+
+.list {
+  padding: 24rpx;
+}
+
+.tabs {
+  margin-right: 26rpx;
+  background: #f5f5f5;
+  border-radius: 60rpx;
+}
+
+.status {
+  width: 4em;
+}
+
+.sign {
+  /* position: absolute;
+  bottom: 20rpx;
+  right: 20rpx; */
+  width: 60rpx;
+  height: 60rpx;
+  background: #fd9726;
+  border-radius: 50%;
+}
+
+.xsm-icon {
+  width: 40rpx;
+  height: 40rpx;
+}
