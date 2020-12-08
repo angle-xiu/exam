@@ -1,1 +1,61 @@
 /* pages/note/note.wxss */
+.contain{
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding: 35rpx;
+}
+.item{
+  width: 195rpx;
+  height: 245rpx;
+}
+.item .content{
+  overflow:hidden; 
+  text-overflow:ellipsis; 
+  display: -webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp: 5;
+  background: #fff;
+}
+.item .footer{
+  text-align: center;
+  background: #00BFFF;
+  padding: 10rpx 0;
+}
+.add image{
+  width: 100%;
+  height: 100%;
+}
+
+/* 提醒 */
+.tips_box{
+  position: relative;
+}
+.tips_icon{
+  position: absolute;
+  top:-60rpx;
+}
+.item.more{
+  background: url(/images/resource/more.png) no-repeat center center;
+  background-size: 60%;
+}
+.tips{
+  position: absolute;
+  z-index: 9;
+  right: 190rpx;
+  bottom: -140rpx;
+}
+.tips_txt{
+  width: 360rpx;
+  font-size: 32rpx;
+  padding: 45rpx 0;
+  text-align: center;
+  background: #fff;
+  border-radius:14rpx; 
+}
+.tips_icon{
+  width: 70rpx;
+  height: 70rpx;
+  margin-left: 30rpx;
+  background-size:100%; 
+}

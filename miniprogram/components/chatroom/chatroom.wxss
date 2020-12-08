@@ -65,7 +65,7 @@
   align-items: flex-start;
 }
 
-.body .message.message__self .main {
+.body .message .message__self .main {
   align-items: flex-end;
 }
 

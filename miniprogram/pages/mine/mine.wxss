@@ -1,1 +1,90 @@
 /* pages/mine/mine.wxss */
+.item_info{
+  padding: 39rpx 0 48rpx 0;
+  background-color: #fff;
+  border-top: 1px solid #dfe0e2;
+  border-bottom: 1px solid #dfe0e2;
+}
+.item {
+  padding: 29rpx 0 38rpx 0;
+  background-color: #fff;
+  border-top: 1px solid #dfe0e2;
+  border-bottom: 1px solid #dfe0e2;
+}
+/* 图标 */
+.user_icon{
+  padding-left: 120rpx;
+  margin-right: 130rpx;
+}
+.user_icon image{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  background-size: cover;
+  background-color: white;
+}
+.icons {
+  width: 196rpx;
+}
+
+.icons image {
+  width: 62rpx;
+  height: 63rpx;
+}
+
+.goahead {
+  width: 97rpx;
+}
+
+.goahead image.go-big {
+  width: 23rpx;
+  height: 39rpx;
+}
+
+.goahead  image.go-small {
+  width: 15rpx;
+  height: 25rpx;
+}
+
+.wave-line {
+  width: 513rpx;
+  /* height: 2rpx; */
+  border-bottom: 1px dotted rgba(153, 153, 153, 1);
+}
+
+#key-point .icons image {
+  width: 92rpx;
+  height: 92rpx;
+}
+
+#key-point .title::before {
+  position: absolute;
+  top: 50%;
+  transform: translate(-7rpx, -7rpx);
+  left: 16rpx;
+  content: '  ';
+  width: 14rpx;
+  height: 14rpx;
+  margin-right: 20rpx;
+  border-radius: 50%;
+}
+
+#key-point #key0 .title::before {
+  background: #ccc;
+}
+
+#key-point #key1 .title::before {
+  background: #999;
+}
+
+#key-point #key2 .title::before {
+  background: #ff842a;
+}
+
+#key-point #key3 .title::before {
+  background: #ca093f;
+}
+
+#key-point #key4 .title::before {
+  background: #1a7bfe;
+}

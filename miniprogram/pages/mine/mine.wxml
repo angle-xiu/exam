@@ -1,2 +1,94 @@
-<!--pages/mine/mine.wxml-->
-<text>pages/mine/mine.wxml</text>
+<view>
+	<!-- 我的个人信息 -->
+	<view class='item_info ui-margin-b-2 ui-padding-tb-14 ui-col-center'>
+		<view class='user_icon'>
+			<image src='{{avatarUrl}}'></image>
+		</view>
+		<text class='ui-font-size20'>{{userName}}</text>
+	</view>
+	<!-- 我的笔记 -->
+	<view class='item ui-row ui-margin-b-2 ui-padding-tb-14 .ui-margin-t-6' bindtap='myJournal'>
+		<view class='icons ui-center'>
+			<image src='/images/tabbar/notebook_active.png'></image>
+		</view>
+		<view class='ui-col ui-col-center'>
+			<view>
+				<view class='title ui-font-size15'>我的笔记</view>
+			</view>
+		</view>
+		<view class='goahead ui-center'>
+			<image class='go-big' src='/images/resource/goahead_light_grey.png'></image>
+		</view>
+	</view>
+	<!-- 我的学习任务 -->
+	<view class='item ui-row ui-margin-b-2 ui-padding-tb-14' data-name='isJoined' bindtap='myTask'>
+		<view class='icons ui-center'>
+			<image src='/images/tabbar/book.png'></image>
+		</view>
+		<view class='ui-col ui-col-center'>
+			<view>
+				<view class='title ui-font-size15 ui-margin-b-2'>我的学习任务</view>
+				<view class='desc ui-txt-red ui-font-size12' hidden='{{joinedTaskProgressAndNotPassNum == 0}}'>{{joinedTaskProgressAndNotPassNum}}个学习中</view>
+			</view>
+		</view>
+		<view class='goahead ui-center'>
+			<image class='go-big' src='/images/resource/goahead_light_grey.png'></image>
+		</view>
+	</view>
+	<!-- 考卷 -->
+	<view class='item ui-row ui-margin-b-2 ui-padding-tb-14'>
+		<view class='icons ui-center'>
+			<image src='/images/tabbar/score100_active.png'></image>
+		</view>
+		<view class='ui-col ui-col-center'>
+			<view class='ui-col'>
+				<view class='ui-row ui-padding-b-4' data-type="exampaper" bindtap='myExam'>
+					<view class='ui-col title ui-font-size14 ui-padding-tb-8'>
+						<text>我的考卷</text>
+						<text class='ui-margin-l-6 desc ui-txt-red ui-font-size12' hidden='{{paperUnfinishNum == 0}}'>{{paperUnfinishNum}}个未完成</text>
+					</view>
+					<view class='goahead ui-center'>
+						<image class='go-small' src='/images/resource/goahead_light_grey.png'></image>
+					</view>
+				</view>
+				<view class='wave-line'></view>
+				<view class='ui-row ui-padding-t-4' data-type="selfstudy" bindtap='myExam'>
+					<view class='ui-col title ui-font-size14 ui-padding-tb-8'>我的自测</view>
+					<view class='goahead ui-center'>
+						<image class='go-small' src='/images/resource/goahead_light_grey.png'></image>
+					</view>
+				</view>
+			</view>
+		</view>
+
+	</view>
+	<!-- 学习资料 -->
+	<view class='item ui-row ui-margin-b-2 ui-padding-tb-14'>
+		<view class='icons ui-center'>
+			<image src='/images/resource/search_folder.png'></image>
+		</view>
+		<view class='ui-col ui-col-center'>
+				<view class='ui-row' data-name='isCollect' bindtap='myStudyMaterial'>
+					<view class='ui-col title ui-font-size14 ui-padding-tb-8'>我收藏的学习资料</view>
+					<view class='goahead ui-center'>
+						<image class='go-big' src='/images/resource/goahead_light_grey.png'></image>
+					</view>
+				</view>
+			</view>
+		</view>
+	<!-- 我下发的学习任务 -->
+	<view class='item ui-row ui-margin-b-2 ui-padding-tb-14' data-name='isDistributed' bindtap='myTask'>
+		<view class='icons ui-center'>
+			<image src='/images/tabbar/material_blue.png'></image>
+		</view>
+		<view class='ui-col ui-col-center'>
+			<view>
+				<view class='title ui-font-size15 ui-margin-b-2'>我下发的学习任务</view>
+				<view class='desc ui-txt-red ui-font-size12' hidden='{{distributedTaskProgressNum == 0}}'>{{distributedTaskProgressNum}}个进行中</view>
+			</view>
+		</view>
+		<view class='goahead ui-center'>
+			<image class='go-big' src='/images/resource/goahead_light_grey.png'></image>
+		</view>
+	</view>
+</view>

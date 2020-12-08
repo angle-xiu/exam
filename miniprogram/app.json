@@ -1,8 +1,10 @@
 {
   "pages": [
+    "pages/note/note",
+    "pages/edit/edit",
+    "pages/login/login",
     "pages/taskList/taskList",
     "pages/read/read",
-    "pages/note/note",
     "pages/mine/mine"
   ],
   "window": {
@@ -16,6 +18,7 @@
     "color": "#8f8f8f",
     "selectedColor": "#247ffa",
     "backgroundColor": "#FEFCFF",
+    "borderStyle": "white",
     "list": [{
         "pagePath": "pages/taskList/taskList",
         "iconPath": "/images/tabbar/material_grey.png",

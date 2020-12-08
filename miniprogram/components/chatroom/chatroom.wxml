@@ -7,7 +7,7 @@
     <!-- reserved -->
     <view class="right"></view>
   </view>
-
+    
   <!-- chats -->
   <scroll-view 
     class="body" 

@@ -1,2 +1,26 @@
-<!--pages/note/note.wxml-->
-<text>pages/note/note.wxml</text>
+<view class="contain">
+  <!-- 添加笔记 -->
+  <view class="item add" bindtap="addNote">
+    <image src="/images/resource/add_img.png"></image>
+  </view>
+  <!-- 添加提醒 -->
+  <block wx:if="{{false}}">
+    <view class='tips'>
+      <view class='tips_box'>
+        <image class='tips_icon' src="/images/resource/tips_icon.png" style="width:70rpx;height:70rpx;"></image>
+      </view>
+      <view class='tips_txt'>点此添加新记事本</view>
+    </view>
+  </block>
+
+  <!-- 笔记列表 -->
+  <!-- <block wx:for="{{items}}" wx:key = "{{items.key}}"> -->
+    <view class="item">
+      <view class="content" value = "{{items.content}}">hello world
+        asdnfksdanfkljsdanfjklsdaklfbsdajhgbrglkjsadnfjksdnafjklsnajkdfnewjklnhgklasjhfjkdhfkalsdfhklasdhfjkdshflks
+      </view>
+      <view class="footer" value = "{{items.time}}">2020-1-1</view>
+    </view>
+  <!-- </block> -->
+
+</view>

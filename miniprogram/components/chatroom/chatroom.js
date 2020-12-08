@@ -18,7 +18,7 @@ Component({
       type: Function,
     },
   },
-
+  
   data: {
     chats: [],
     textInputValue: '',
